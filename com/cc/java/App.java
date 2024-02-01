@@ -7,14 +7,17 @@ public class App {
        Queen queen = new Queen();
        Worker worker = new Worker();
        Drone drone = new Drone();
-       
-       pollObj(queen);
-       pollObj(worker);
-       pollObj(drone);
+       Bird bird = new Bird();
 
-        //-- Das sollte eigentlich nicht gehen!--//
-        HoneyBee bee = new HoneyBee();
-        pollObj(bee);
+
+        pollObj(bird);
+        pollObj(queen);
+        pollObj(worker);
+        pollObj(drone);
+
+        //-- Das geht nicht - Asbtraktion!--//
+        // HoneyBee bee = new HoneyBee();
+        // pollObj(bee);
 
     }
 
